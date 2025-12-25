@@ -27,5 +27,5 @@ A complete social media application built with Django REST Framework (backend) a
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/my-social-platform.git
+   git clone https://github.com/Rayxworld/my-social-platform.git
    cd my-social-platform
