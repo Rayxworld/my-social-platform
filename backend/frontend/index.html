@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySocial - Social Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Auth View -->
+        <div id="authView">
+            <div class="auth-card">
+                <h1>MySocial</h1>
+                <div id="authMessage" class="message hidden"></div>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email (for register)" class="hidden">
+                <input type="password" id="password" placeholder="Password" required>
+                <button id="authBtn">Login</button>
+                <button id="toggleBtn" type="button">Switch to Register</button>
+            </div>
+        </div>
+
+        <!-- Main Feed -->
+        <div id="mainView" class="hidden">
+            <header>
+                <h1>MySocial</h1>
+                <div class="user-info">
+                    <span>Welcome, <strong id="currentUsername"></strong></span>
+                    <button id="logoutBtn">Logout</button>
+                </div>
+            </header>
+
+            <div class="create-post">
+                <textarea id="postContent" placeholder="What's on your mind?" rows="3"></textarea>
+                <button id="postBtn">Post</button>
+            </div>
+
+            <div id="postsList"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
